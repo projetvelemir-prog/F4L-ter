@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import IMAGES from "./images.js";
 
 // ─── HELP CONTENT PER QUESTION ───────────────────────────────────────────────
@@ -840,6 +841,7 @@ export default function App() {
         <img src={IMAGES.twerisIcon} alt="TWERIS" style={{ width:22, height:22, objectFit:"contain" }} />
         <span style={{ fontSize:11, color:"#7c6db5", letterSpacing:"0.2em", textTransform:"uppercase" }}>TWERIS · Fetal CTG Assessment</span>
       </div>
+      <Analytics />
     </div>
   );
 }
